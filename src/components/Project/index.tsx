@@ -17,7 +17,7 @@ interface ReposType {
   name: string;
   language: string;
   description: string;
-  git_url: string;
+  html_url: string;
   homepage: string;
 }
 
@@ -62,18 +62,18 @@ export const Project = (): JSX.Element => {
             ) : (
               <ProjectStackTech>
                 <Text color="grey2" type="body2">
-                  Not identified
+                  Não identificada
                 </Text>
               </ProjectStackTech>
             )}
           </ProjectStack>
 
           <Text type="body1" color="grey2">
-            {repository.description.substring(0, 129)}
+            {repository?.description?.substring(0, 129)}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.git_url}>
-              <FaGithub /> Github Code
+            <ProjectLink target="_blank" href={repository.html_url}>
+              <FaGithub /> Verifique o código no Github
             </ProjectLink>
             {repository.homepage && (
               <ProjectLink target="_blank" href={repository.homepage}>

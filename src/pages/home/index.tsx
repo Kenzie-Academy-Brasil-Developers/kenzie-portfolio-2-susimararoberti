@@ -43,33 +43,29 @@ export const Home = (): JSX.Element => {
                 height={"48px"}
               />
               <Text color="grey4" css={{ marginLeft: "$2" }}>
-                Hello, my name is {userData.nameUser} <HandEffect />
+                Olá, me chamo {userData.nameUser} <HandEffect />
               </Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-              I{" "}
+              Estudo Desenvolvimento{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                Full Stack.
               </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
-                developing
-              </Text>{" "}
-              projects
+              <Text as="span" type="heading1" color="brand1"></Text>{" "}
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Nesse ambiente, disponibilizo com carinho, os projetos que
+              realizei no Front-end e as tecnologias que já possuo habilidade!
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Confira meus projetos
               </Button>
               <Button
                 as="a"
                 type="circle"
                 target="_blank"
-                href={userData.githubUser}
+                href={`https://github.com/${userData.githubUser}`}
               >
                 <FaGithub />
               </Button>
@@ -87,12 +83,12 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                Meus projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Projects created at{" "}
+                Projetos desenvolvidos na{" "}
                 <Text as="span" color="brand5">
-                  Kenzie Academy
+                  Kenzie Academy Brasil
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
