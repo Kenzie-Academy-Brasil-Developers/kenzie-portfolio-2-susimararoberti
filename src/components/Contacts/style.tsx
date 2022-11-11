@@ -12,7 +12,7 @@ export const ContactSectionContent = styled("div", {
   display: "flex",
   justifyContent: "space-between",
   "@mobile": {
-    flexDirection: "column"
+    flexDirection: "column",
   },
 });
 
@@ -25,7 +25,7 @@ export const ContactSectionText = styled("aside", {
   top: "8rem",
   "@mobile": {
     position: "static",
-    marginBottom: "$5"
+    marginBottom: "$5",
   },
 });
 
@@ -43,11 +43,11 @@ export const ContactCard = styled("div", {
   display: "flex",
   paddingRight: "10rem",
   marginBottom: "6rem",
-  ["& a"]:{
-    "&:hover":{
-        color: "$grey4",
-        cursor: "pointer"
-    }
+  ["& a"]: {
+    "&:hover": {
+      color: "$grey4",
+      cursor: "pointer",
+    },
   },
   "@mobile": {
     paddingRight: "0",
@@ -68,11 +68,11 @@ export const ContactCardImage = styled("div", {
     background: "linear-gradient(180deg, #50C571 0%, #50CF9A 100%)",
   },
   ["&.email"]: {
-    background: "linear-gradient(180deg, #BD3B9B 0%, #EE5BC7 100%)",
+    background: "linear-gradient(180deg, #bbbd3b 0%, #e9d944 100%)",
   },
   ["&.linkedin"]: {
     background: "linear-gradient(180deg, #4E73FF 0%, #506CCF 100%)",
-  }
+  },
 });
 
 export const ContactCardContent = styled("div", {

@@ -1,7 +1,7 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
-import { css } from "@stitches/react"
+import { css } from "@stitches/react";
 
 import img from "@/public/static/img/background/header-bg.svg";
 import dots from "@/public/static/img/background/dots.svg";
@@ -36,6 +36,7 @@ export const HeaderContent = styled("div", {
 
 export const HeaderButtonsArea = styled(Flex, {
   marginTop: "$2",
+  marginBottom: "$4",
   [`& ${Button}`]: {
     marginRight: "$2",
   },
@@ -56,11 +57,13 @@ export const StackSection = styled("div", {
 });
 
 export const StackCards = styled("div", {
+  /*display: "flex",
+  flexDirection: "row",
+  overflow:"auto"*/
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr 1fr",
   padding: "3rem 0",
-  gap: "6rem",
-  marginTop: "$4",
+  gap: "3rem",
 
   "@tablet": {
     gridTemplateColumns: "1fr 1fr 1fr",

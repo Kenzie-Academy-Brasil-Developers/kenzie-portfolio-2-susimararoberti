@@ -36,11 +36,17 @@ export const colors = {
     brand3: {
       color: "$brand3",
     },
+    brand4: {
+      color: "$brand4",
+    },
     brand5: {
       color: "$brand5",
     },
+    brand6: {
+      color: "$brand6",
+    },
     brand7: {
-      color: "$brand5",
+      color: "$brand7",
     },
     grey1: {
       color: "$grey1",
@@ -61,9 +67,6 @@ export const colors = {
     grey5: {
       color: "$grey5",
     },
-    grey6: {
-      color: "$grey6",
-    },
   },
 };
 
@@ -83,13 +86,13 @@ export const globalStyles = globalCss({
 export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
   const theme = createTheme({
     colors: {
-      brand1: "#623CEA",
-      brand2: "#311E75",
+      brand1: "#db06bf",
+      brand2: "#7e0459",
       brand3: "#50CF9A",
       brand4: "#E5F8F0",
-      brand5: "#FF577F",
+      brand5: "#fc3d69",
       brand6: "#F8E5F3",
-      brand7: "#506CCF",
+      brand7: "#1f55ca",
       brand8: "#E5E9F8",
 
       grey0: "#0A0A0B",
@@ -117,7 +120,7 @@ export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
       4: "3rem",
       5: "4rem",
       section: "10rem",
-      sectionMobile: "4rem"
+      sectionMobile: "4rem",
     },
     fonts: {
       titles: '"IBM Plex Sans", sans-serif;',

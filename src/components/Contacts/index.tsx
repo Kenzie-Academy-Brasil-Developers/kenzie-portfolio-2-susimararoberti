@@ -29,15 +29,11 @@ export const Contacts = () => {
             <ContactSectionText>
               <Text type="heading2" color="grey4">
                 Vamos marcar uma conversa e{" "}
-                <Text as="span" type="heading2" color="brand1">
+                <Text as="span" type="heading2" color="brand5">
                   desenvolver algum projeto
                 </Text>{" "}
                 juntos?
               </Text>
-              {/* <Text color="grey2" type="body1">
-                Advertise your brand organically within Dribbble’s design
-                inspiration feed.
-              </Text> */}
             </ContactSectionText>
           </motion.div>
           <ContactsCards>

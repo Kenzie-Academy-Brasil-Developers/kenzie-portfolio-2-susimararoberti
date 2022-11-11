@@ -4,12 +4,10 @@ import { Text } from "@/styles/Text";
 import { Button } from "@/styles/Buttons";
 
 // Components
-import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
 
 // Data
-import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
 import { FaGithub } from "react-icons/fa";
@@ -48,14 +46,15 @@ export const Home = (): JSX.Element => {
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
               Estudo Desenvolvimento{" "}
-              <Text as="span" type="heading1" color="brand1">
+              <Text as="span" type="heading1" color="brand5">
                 Full Stack.
               </Text>{" "}
               <Text as="span" type="heading1" color="brand1"></Text>{" "}
             </Text>
             <Text type="body1" color="grey2">
-              Nesse ambiente, disponibilizo com carinho, os projetos que
-              realizei no Front-end e as tecnologias que já possuo habilidade!
+              Seja Bem-vind@! Nesse ambiente, você encontrará as tecnologias que
+              já possuo habilidade e também poderá verificar os projetos que já
+              desenvolvi!
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -70,10 +69,52 @@ export const Home = (): JSX.Element => {
                 <FaGithub />
               </Button>
             </HeaderButtonsArea>
+            <Text as="h2" type="heading4" color="grey4">
+              Tecnologias
+            </Text>
             <StackCards>
-              {stackData.map((stack, index) => (
-                <Stack key={index} title={stack.title} icon={stack.img} />
-              ))}
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="NodeJs"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                alt="Django"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                alt="Docker"
+              />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
             </StackCards>
           </HeaderContent>
         </Container>
@@ -87,7 +128,7 @@ export const Home = (): JSX.Element => {
               </Text>
               <Text as="p" type="body1" color="grey2">
                 Projetos desenvolvidos na{" "}
-                <Text as="span" color="brand5">
+                <Text as="span" color="brand7">
                   Kenzie Academy Brasil
                 </Text>
               </Text>
